@@ -1,6 +1,6 @@
 {
   "name": "@mwillbanks/release-it-expo-bumper-plugin",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Release-it plugin for Expo which bumps app.json or app.config.json version numbers.",
   "type": "module",
   "exports": "./index.js",
