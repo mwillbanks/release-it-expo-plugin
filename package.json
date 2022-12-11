@@ -1,0 +1,54 @@
+{
+  "name": "@mwillbanks/release-it-expo-bumper-plugin",
+  "version": "0.0.0",
+  "description": "Release-it plugin for Expo which bumps app.json or app.config.json version numbers.",
+  "type": "module",
+  "exports": "./index.js",
+  "scripts": {
+    "test": "bron test.js",
+    "release": "release-it"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwillbanks/release-it-expo-plugin.git"
+  },
+  "keywords": [
+    "release",
+    "release-it",
+    "release-it-plugin",
+    "expo",
+    "bump",
+    "increment",
+    "app.json"
+  ],
+  "author": {
+    "email": "me@mike.engineer",
+    "name": "Mike Willbanks"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mwillbanks/release-it-expo-plugin/issues"
+  },
+  "homepage": "https://github.com/mwillbanks/release-it-expo-plugin#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "bron": "^2.0.3",
+    "mock-fs": "^5.1.2",
+    "release-it": "^15.0.0-esm.4",
+    "sinon": "^13.0.2"
+  },
+  "peerDependencies": {
+    "release-it": "^15.0.0-esm.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "release-it": {
+    "hooks": {
+      "before:init": "npm test"
+    }
+  }
+}
